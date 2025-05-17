@@ -8,7 +8,7 @@ const App = () => {
   const [classes, setClasses] = useState([]);
 
   useEffect(() => {
-    fetch("/api/temp/gettestingdata")
+    fetch("https://sms.ilmwasooli.com/temp/gettestingdata")
       .then((response) => response.json())
       .then((json) => {
         setData(json.Data);
